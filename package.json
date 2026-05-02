@@ -1,0 +1,12 @@
+{
+  "name": "brainroom-root",
+  "version": "1.0.0",
+  "description": "Root workspace to easily start both frontend and backend",
+  "scripts": {
+    "install:all": "cd server && npm install && cd ../client && npm install",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "start": "npm run dev:server",
+    "dev": "npx concurrently \"npm run dev:server\" \"npm run dev:client\""
+  }
+}
